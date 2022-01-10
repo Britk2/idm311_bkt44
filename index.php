@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebVR</title>
+    <title>UI-IM</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
     <div class="container">
         <h1>User Interface in Immersive Media</h1>
+        <p>Planning to revamp the menu system for this class website!</p>
         
         <div id="hw_links">
+            <header>
+                <!-- <strike><h2>HW 00: Test WebGL</h2></strike> -->
+                <a href="test/index.html" class="hw_title"><h2>HW 00</h2></a>
+                <p>Testing out the WebGL. Currently does not load properly</p>
+            </header>
             <header>
                 <strike><h2>HW 01</h2></strike>
                 <!-- <a href="hwk01" class="hw_title"><h2>HW 01</h2></a> -->
