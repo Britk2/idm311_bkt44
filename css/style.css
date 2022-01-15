@@ -17,10 +17,10 @@ body{
 }
 
 .container{
-    width: 85%;
     margin: auto;
-    max-width: 68rem;
     padding-bottom: 2rem;
+    width: 80%;
+    margin-left: 20%;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -45,14 +45,11 @@ a{
 }
 
 footer{
-    background-color:var(--darkBackground);
     text-align: center;
-    color: var(--textCs);
+    color: var(--textC);
     padding: 2.5rem;
-}
-
-header{
-    margin: 1rem;
+    width: 80%;
+    margin-left: 20%;
 }
 
 button, .links{
@@ -88,16 +85,12 @@ button:hover, .links:hover{
     width: 35%;
 }
 
-header h1{
-    text-decoration: underline;
-    text-decoration-color: var(--purple);
-    letter-spacing: 1rem;
-}
-
 img{
-    width: 100%;
+    width: 75%;
     display: inline-block;
     text-align: center;
+    margin: auto;
+    display: block;
 }
 
 .section{
@@ -108,322 +101,38 @@ img{
     padding-top: .5rem;
 }
 
-/* Menu */
-
-        /* Style The Dropdown Button */
-        .dropbtn {
-            background-color: var(--backgroundC);
-            color: var(--textC);
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: var(--darkBackground);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            color: var(--textCs);
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: var(--backgroundC)}
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {
-            background-color: var(--darkBackground);
-            color: var(--textCs);
-        }
-
-        /*For Troubleshooting*/
-
-        .dropbtn-ts {
-            background-color: var(--backgroundC);
-            color: var(--textC);
-            padding: 1rem;
-            font-size: 1rem;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* The container <div> - needed to position the dropdown content */
-        .dropdown-ts {
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-tsContent {
-            display: none;
-            position: absolute;
-            background-color: var(--darkBackground);
-            width: 600%;
-            padding: 3rem 1rem 1rem 2rem;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-tsContent a {
-            color: var(--textC);
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Change color of dropdown links on hover */
-        .dropdown-tsContent a:hover {background-color: var(--backgroundC)}
-
-        /* Show the dropdown menu on hover */
-        .dropdown-ts:hover .dropdown-tsContent {
-            display: block;
-        }
-
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown-ts:hover .dropbtn-ts {
-            background-color: var(--darkBackground);
-        }
-
-
-/* HW3 (360 Image) Page*/
-
-#vrWrap{
-    display: flex;
-    justify: center;
-    width: 100%;
-    height: 50%;
-    margin: 1rem auto;
-}
-
-#vrCanvas{
-    width: 100rem;
-    height: 50rem;
-}
-
-/* Hotspots */
-
-.bridge-hotspot{
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    background: #FFD700;
-}
-.sky-hotspot{
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    background: #20B2AA;
-}
-.video-hotspot{
-    height: 3rem;
-    width: 3rem;
-    transform: rotate(30deg);
-    background-image: url('../img/youtube.png');
-}
-
-div.custom-tooltip span{
-    visibility: hidden;
-    position: absolute;
-    border-radius: 5px;
-    background-color: var(--darkBackground);
-    color: var(--textC);
-    text-align: center;
-    max-width: 12.5rem;
-    padding: .5rem 1rem;
-    margin-left: -13rem;
-    cursor: default;
-}
-div.custom-tooltip:hover span{
-    visibility: visible;
-}
-div.custom-tooltip:hover span:after{
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-width: 10px;
-    border-style: solid;
-    border-color:var(--darkBackground) transparent transparent transparent;
-    bottom: -20px;
-    left: -10px;
-    margin: 0 50%;
-}
-
-
-div.custom-tooltip-img span{
-    visibility: hidden;
-    position: absolute;
-    border-radius: 5px;
-    background-color: var(--darkBackground);
-    color: var(--textC);
-    text-align: center;
-    max-width: 25rem;
-    padding: 1rem 1rem .75rem 1rem;
-    margin-left: -13rem;
-    cursor: default;
-}
-
-#imgID{
-    width: 100%;
-    max-width: 20rem;
-}
-div.custom-tooltip-img:hover span{
-    visibility: visible;
-}
-div.custom-tooltip-img:hover span:after{
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-width: 10px;
-    border-style: solid;
-    border-color:var(--darkBackground) transparent transparent transparent;
-    bottom: -20px;
-    left: -10px;
-    margin: 0 50%;
-}
-
-div.custom-tooltip-video span{
-    visibility: hidden;
-    position: absolute;
-    border-radius: 5px;
-    background-color: var(--darkBackground);
-    color: var(--textC);
-    text-align: center;
-    max-width: 25rem;
-    padding: 1rem 1rem .75rem 1rem;
-    margin-left: -13rem;
-    cursor: default;
-}
-div.custom-tooltip-video:hover span{
-    visibility: visible;
-}
-
-#vidID{
-    width: 100%;
-    max-width: 20rem;
-}
-
-
-
-
-/*THREE JS*/
-
-
-.anButtonG, #vrSpace, figure{
-    width: 75rem;
-    font-size: 1.25rem;
-    background-color: var(--textC);
-}
-
-.anButtonG, .credit, figcaption, #buttonStatus, #buttonStatus2, .instruction{
-    text-align: center;
-}
-
-.anButtonG{
-    display: flex;
-    justify-content: center;
-}
-
-#vrSpace{
-    height: 50rem;
-}
-
-.credit, figcaption, #buttonStatus, #buttonStatus2, .instruction{
-    padding: .25rem .5rem;
-}
-
-a{
-    text-decoration: underline;
-}
-
-#buttonStatus, #buttonStatus2, .instruction, .anButtonG, #vrSpace, figure{
-    color: var(--darkBackground);
-}
-
-#finalTitle{
-    margin: 0;
-}
-
-figure, .anButtonG, #vrSpace, figure{
-    margin: auto;
-}
-
-.code{
-    background-color: var(--darkBackground);
-}
-
-.links a{
-    text-decoration: none;
-    padding: 1rem;
-}
-
-.demo{
-    max-width: 35rem;
-    padding: 2rem;
+iframe{
     margin: auto;
     display: block;
 }
 
-/*Color Picker*/
-
-#codePen{
-    margin: 1rem 0 .5rem;
+#unity-container{
+    width: fit-content;
+    margin: auto;
 }
 
-.colorPicker{
-    text-align: center;
+/* Menu */
+
+.menu-sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background: var(--darkBackground);
+    height:100%;
+    position:fixed!important;
+    top: 0;
+    justify-content: start;
+    color: var(--textCs);
+}
+
+.menu-button{
+    margin-left: 25%;
     padding: 1rem;
+    color: var(--textCs);
+    text-decoration: none;
 }
 
-fieldset{
-    border: none;
-  }
-  output{
-    display: inline-block;
-    min-width: 2.5em;
-  }
-  label, output{
-    padding: 2px 9px;
-    border-radius: 3px;
-    font-family: 'Roboto', sans-serif;
-    color: #000;
-    font-size: 1.1em;
-  }
-  label[for=r], output[for=r]{
-    background-color: #f00;
-  }
-  label[for=g], output[for=g]{
-    background-color: #0f0;
-  }
-  label[for=b], output[for=b]{
-    background-color: #00f;
-  }
-  #hex{
-    min-width: 4.5em;
-    font-size: 3em;
-    background: rgba(255,255,255,.3);
-  }
+.menu-button:hover{
+    background: white;
+    color: var(--textC);
+}
