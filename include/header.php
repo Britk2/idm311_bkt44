@@ -8,6 +8,7 @@
         <a href="../hwk05" class="menu-bar-item menu-button">HW 05</a>
         <a href="../final" class="menu-bar-item menu-button">Final</a>
         <a href="../caseStudy" class="menu-bar-item menu-button">Case Study</a> -->
-        <a href="../test/index.php" class="menu-bar-item menu-button">WebGL Test</a>
+        <a href="../test/index.php" class="menu-bar-item menu-button">WebGL 3D Test</a>
+        <a href="../test01/index.php" class="menu-bar-item menu-button">WebGL 2D Test</a>
     </div>
 </header>

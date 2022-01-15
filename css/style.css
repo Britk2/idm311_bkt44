@@ -32,7 +32,7 @@ h1{
 }
 
 p{
-    max-width: 105ch;
+    max-width: 75ch;
     margin: auto;
     padding-top: .5rem;
     line-height: 1.5;
@@ -47,7 +47,9 @@ a{
 footer{
     text-align: center;
     color: var(--textC);
-    padding: 2.5rem;
+
+    margin: auto;
+    padding-bottom: 2rem;
     width: 80%;
     margin-left: 20%;
 }
@@ -91,6 +93,7 @@ img{
     text-align: center;
     margin: auto;
     display: block;
+    padding-top: .5rem;
 }
 
 .section{
