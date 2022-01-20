@@ -10,8 +10,8 @@
 <body>
 <?php include('../include/header.php'); ?>
     <div class="container">
-        <h1>Homework 00</h1>
-        <p>Click on the "Replay" button or press "R" on the keyboard to reset the game/experience.</p>
+        <h1>Independent Study WebGL01</h1>
+        <p><a href="https://play.unity.com/mg/other/ui_worldspace-v1" target="_blank">View it on Unity Play</a></p>
         <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -26,19 +26,19 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Essentials 3D Project</div>
+        <div id="unity-build-title">CC_UI World Space</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/essential3d-nc.loader.js";
+      var loaderUrl = buildUrl + "/ui_worldSpace-v1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/essential3d-nc.data",
-        frameworkUrl: buildUrl + "/essential3d-nc.framework.js",
-        codeUrl: buildUrl + "/essential3d-nc.wasm",
+        dataUrl: buildUrl + "/ui_worldSpace-v1.data",
+        frameworkUrl: buildUrl + "/ui_worldSpace-v1.framework.js",
+        codeUrl: buildUrl + "/ui_worldSpace-v1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "btudesign",
-        productName: "Essentials 3D Project",
+        productName: "CC_UI World Space",
         productVersion: "0.1",
       };
 

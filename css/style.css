@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Heebo", sans-serif;
 }
 
-h1{
+h1, h2{
     text-align: center;
 }
 
@@ -104,13 +104,36 @@ img{
     padding-top: .5rem;
 }
 
-iframe{
-    margin: auto;
-    display: block;
+.org-link{
+    display:block;
+    margin:auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width:fit-content;
 }
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
 
 #unity-container{
     width: fit-content;
+    margin: auto;
+}
+
+a:hover{
+    background:var(--darkBackground);
+    color:white;
+}
+
+.webgl-img-sec{
+
+}
+
+.cardboard-img-sec{
+    width: 45%;
     margin: auto;
 }
 
