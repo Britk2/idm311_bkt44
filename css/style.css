@@ -128,13 +128,34 @@ a:hover{
     color:white;
 }
 
-.webgl-img-sec{
-
+.center{
+    margin: auto;
+    text-align: center;
 }
+
+/* .webgl-img-sec{
+} */
 
 .cardboard-img-sec{
     width: 45%;
     margin: auto;
+}
+
+/*Hover Image*/
+
+.vrGallery1-L, .vrGallery2-L, .vrGallery1-S, .vrGallery2-S{
+    position: relative;
+}
+
+.vrGallery1a-L, .vrGallery2a-L, .vrGallery1a-S, .vrGallery2a-S{
+    position: absolute;
+    top: 0;
+    right: 12.5%;
+    opacity: 0;
+}
+
+.vrGallery1a-L:hover, .vrGallery2a-L:hover, .vrGallery1a-S:hover, .vrGallery2a-S:hover{
+    opacity: 1;
 }
 
 /* Menu */
