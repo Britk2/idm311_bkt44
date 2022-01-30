@@ -13,91 +13,84 @@
         <h1>Homework 02</h1>
 
         <div class="section">
-            <h2>Fort Point, San Francisco, CA, USA</h2>
-            <img src="../img/fortpoint.jpeg" alt="Fort Point, San Francisco, CA, USA 360 Image">
-
-            <ul>
-                <li>
-                    <strong>Bridge</strong> 
-                    <ul>
-                        <li>Hover displays text information on the Golden Gate bridge</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Cannons</strong>
-                    <ul>
-                        <li>Hover for a text information about use of the place</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Information Placard:</strong>
-                    <ul>
-                        <li>Click on for video on the history of the location</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="buttonCenter"><a href="../img/fortpoint.jpeg" target="_blank" class="button"><button>View Fort Point 360 Image</button></a>
-            </div>
+        <p>This file is about 38 MB</p>
         </div>
 
-        <div class="section">
-            <h2>Times Square, Manhattan, NY, USA</h2>
-
-            <img src="../img/timessquare.jpeg" alt="Times Square, Manhattan, NY, USA">
-
-            <ul>
-                <li>
-                    <strong>Police Dept</strong> 
-                    <ul>
-                        <li>Hover displays text information on location</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>One Times Square Building</strong>
-                    <ul>
-                        <li>Click on for video playing New Year's ball drop</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Paramount Building</strong>
-                    <ul>
-                        <li>Hover for text information on building</li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <div class="buttonCenter"><a href="../img/timessquare.jpeg" target="_blank" class="button"><button>View Times Square 360 Image</button></a></div>
+        <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
         </div>
+      </div>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+      </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">IDM311 - HW02</div>
+      </div>
+    </div>
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/hw02-v2.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/hw02-v2.data",
+        frameworkUrl: buildUrl + "/hw02-v2.framework.js",
+        codeUrl: buildUrl + "/hw02-v2.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "btudesign",
+        productName: "IDM311 - HW02",
+        productVersion: "0.1",
+      };
 
-        <div class="section">
-            <h2>Apartment Interior Design</h2>
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var mobileWarning = document.querySelector("#unity-mobile-warning");
 
-            <img src="../img/apartment.jpeg" alt="Miami, FL, USA 360 Image">
+      // By default Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
 
-            <ul>
-                <li>
-                    <strong>Door Entrance</strong> 
-                    <ul>
-                        <li>Hover displays text information on location of the room</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Kitchen</strong>
-                    <ul>
-                        <li>Hover for text information on what the kitchen includes (stoves, ovens, etc.)</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>TV</strong>
-                    <ul>
-                        <li>Hover for information on pricing for the room and rules</li>
-                    </ul>
-                </li>
-            </ul>
-            
-            <div class="buttonCenter"><a href="../img/apartment.jpeg" target="_blank" class="button"><button>View Apartment 360 Image</button></a></div>
-        </div>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        // Avoid draining fillrate performance on mobile devices,
+        // and default/override low DPI mode on mobile browsers.
+        config.devicePixelRatio = 1;
+        mobileWarning.style.display = "block";
+        setTimeout(() => {
+          mobileWarning.style.display = "none";
+        }, 5000);
+      } else {
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          loadingBar.style.display = "none";
+          fullscreenButton.onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
 
     </div>
 </body>

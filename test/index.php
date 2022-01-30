@@ -12,6 +12,7 @@
     <div class="container">
         <h1>Independent Study WebGL01</h1>
         <p><a href="https://play.unity.com/mg/other/ui_worldspace-v1" target="_blank">View it on Unity Play</a></p>
+        <p>This file is about 38 MB.</p>
         <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">

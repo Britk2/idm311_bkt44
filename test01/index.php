@@ -12,6 +12,7 @@
     <div class="container">
         <h1>Homework 00</h1>
         <p>Click on the press "R" on the keyboard to reset the game/experience. Use the left and right arrow key to move the egg, down arrow key to drop the egg</p>
+        <p>This file is about 14 MB.</p>
         <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
