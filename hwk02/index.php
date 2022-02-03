@@ -10,7 +10,7 @@
 <body>
 <?php include('../include/header.php'); ?>
     <div class="container">
-        <h1>Homework 02</h1>
+        <h1>Homework 02: Before</h1>
 
         <div class="section">
         <p>This file is about 38 MB</p>
@@ -35,15 +35,15 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/hw02-v2.loader.js";
+      var loaderUrl = buildUrl + "/hw02-v3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/hw02-v2.data",
-        frameworkUrl: buildUrl + "/hw02-v2.framework.js",
-        codeUrl: buildUrl + "/hw02-v2.wasm",
+        dataUrl: buildUrl + "/hw02-v3.data",
+        frameworkUrl: buildUrl + "/hw02-v3.framework.js",
+        codeUrl: buildUrl + "/hw02-v3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "btudesign",
         productName: "IDM311 - HW02",
-        productVersion: "0.1",
+        productVersion: "0.2",
       };
 
       var container = document.querySelector("#unity-container");
@@ -91,7 +91,6 @@
       };
       document.body.appendChild(script);
     </script>
-
     </div>
 </body>
 <?php include('../include/footer.php'); ?>
