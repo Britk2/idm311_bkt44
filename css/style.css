@@ -9,6 +9,11 @@
     --purple: #b7a1f3;
 }
 
+::selection {
+    color: --textC;
+    background: var(--textCs);
+  }
+
 body{
     background-color:var(--backgroundC);
     color: var(--textC);
@@ -31,6 +36,11 @@ h1, h2{
     text-align: center;
 }
 
+h3{
+    width: 50%;
+    margin: auto;
+}
+
 p{
     max-width: 75ch;
     margin: auto;
@@ -42,6 +52,12 @@ p{
 a{
     color: var(--textC);
     text-decoration: none;
+}
+
+ul, li{
+    margin: auto;
+    max-width: 45ch;
+    line-height: 1.5;
 }
 
 footer{
@@ -65,6 +81,11 @@ button, .links{
 
 button:hover, .links:hover{
     background-color: var(--purple);
+}
+
+.className h1{
+    text-align: left;
+    margin-left: 15%;
 }
 
 .anButton{

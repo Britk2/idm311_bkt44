@@ -11,6 +11,7 @@
 <?php include('include/header.php'); ?>
     <div class="container">
         <h1>User Interface in Immersive Media</h1>
+        <p>Select a menu item to the left to explore what I have created throughout these courses while learning about UI in Unity</p>
     </div>
 </body>
 <?php include('include/footer.php'); ?>
