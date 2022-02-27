@@ -24,22 +24,13 @@ body{
 .container{
     margin: auto;
     padding-bottom: 2rem;
-    width: 80%;
-    margin-left: 20%;
 }
 
 h1,h2,h3,h4,h5,h6{
     font-family: "Heebo", sans-serif;
-}
-
-h1, h2{
     text-align: center;
 }
 
-h3{
-    width: 50%;
-    margin: auto;
-}
 
 p{
     max-width: 75ch;
@@ -50,7 +41,7 @@ p{
 }
 
 a{
-    color: var(--textC);
+    color: var(--textCs);
     text-decoration: none;
 }
 
@@ -60,18 +51,25 @@ ul, li{
     line-height: 1.5;
 }
 
+pre{
+    font-size: 50%;
+}
+
+.ul-hide{
+    list-style: none;
+    padding: 0;
+}
+
+
 footer{
     text-align: center;
     color: var(--textC);
-
     margin: auto;
     padding-bottom: 2rem;
-    width: 80%;
-    margin-left: 20%;
 }
 
-button, .links{
-    background-color: var(--darkBackground);
+button{
+    background-color: var(--textC);
     border: none;
     padding: 1rem;
     margin-top: 1rem;
@@ -79,13 +77,15 @@ button, .links{
     color: var(--textCs);
 }
 
-button:hover, .links:hover{
-    background-color: var(--purple);
+button:hover{
+    background-color: var(--textCs);
+    color: var(--textC);
 }
 
 .className h1{
     text-align: left;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-bottom: .25rem;
 }
 
 .anButton{
@@ -101,20 +101,19 @@ button:hover, .links:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 
-.statusButtons{
-    padding: .5rem;
-    width: 35%;
-}
-
-img{
+img, video{
     width: 75%;
+    max-width: 50rem;
     display: inline-block;
     text-align: center;
     margin: auto;
     display: block;
     padding-top: .5rem;
+    padding-bottom: 1rem;
 }
 
 .section{
@@ -125,22 +124,9 @@ img{
     padding-top: .5rem;
 }
 
-.org-link{
-    display:block;
-    margin:auto;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    width:fit-content;
-}
-
 iframe{
     display: block;
     margin: auto;
-}
-
-a:hover{
-    background:var(--darkBackground);
-    color:white;
 }
 
 .center{
@@ -162,41 +148,62 @@ a:hover{
     position: relative;
 }
 
-.vrGallery1a-L, .vrGallery2a-L, .vrGallery1a-S, .vrGallery2a-S{
+.vrGallery1-L .after, .vrGallery2-L .after, .vrGallery1-S .after, .vrGallery2-S .after{
     position: absolute;
     top: 0;
-    right: 12.5%;
-    opacity: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    margin: auto;
 }
 
-.vrGallery1a-L:hover, .vrGallery2a-L:hover, .vrGallery1a-S:hover, .vrGallery2a-S:hover{
-    opacity: 1;
+.vrGallery1-L:hover .after, .vrGallery2-L:hover .after, .vrGallery1-S:hover .after, .vrGallery2-S:hover .after{
+    display: block;
 }
 
 /* Menu */
 
+.toggleButton{
+    position: relative;
+    left: 1rem;
+}
 .menu-sidebar{
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 25%;
     background: var(--darkBackground);
     height:100%;
     position:fixed!important;
     top: 0;
     justify-content: start;
     color: var(--textCs);
+    z-index: 1000;
 }
 
-.menu-button{
-    margin-left: 25%;
-    padding: 1rem;
-    color: var(--textCs);
-    text-decoration: none;
+@media (max-width: 1080px) {
+    .menu-sidebar{
+        width: 40%;
+    }
 }
 
 .menu-button:hover{
     background: white;
     color: var(--textC);
+}
+
+.menu-bar-item li{
+    margin-bottom: .5rem;
+    list-style: none;
+    position: relative;
+    left: -10%;
+    margin-left: 20%;
+    padding: .5rem;
+    color: var(--textCs);
+    text-decoration: none;
+}
+.menuButton_toggle{
+    margin: 0 auto;
 }
 
 /*WebGL*/

@@ -1,18 +1,30 @@
 <header>
-    <div class="menu-sidebar menu-bar-block">
+<script src="../js/javascript.js" type="text/javascript"></script>
+    <button class="toggleButton" onclick="myFunction()">Menu</button>
+    <div class="menu-sidebar menu-bar-block" id="menuNav" style="display:none;">
+    <button class="toggleButton" onclick="myFunction()">Menu</button>
         <div class="className menu-bar-item">
             <h1>IDM 311</h1>
+            <ui class="ul-hide">
+                <li class="menu-bar-item menu-button"><a href="../hwk01">HW 01</a></li>
+                <li class="menu-bar-item">HW 02:</li>
+                <ul>
+                    <li class="menu-bar-item menu-button"><a href="../hwk02">Before</a></li>
+                    <li class="menu-bar-item menu-button"><a href="../hwk02_a">After</a></li>
+                </ul>
+                <li class="menu-bar-item menu-button"><a href="../hwk03">HW 03</a></li>
+                <!-- <a href="../final" class="menu-bar-item menu-button">Final</a> -->
+                <!-- <a href="../caseStudy" class="menu-bar-item menu-button">Case Study</a> -->
+            </ui>
         </div>
-        <a href="../hwk01" class="menu-bar-item menu-button">HW 01</a>
-        <a href="../hwk02" class="menu-bar-item menu-button">HW 02: Before</a>
-        <a href="../hwk02_a" class="menu-bar-item menu-button">HW 02: After</a>
-        <a href="../hwk03" class="menu-bar-item menu-button">HW 03</a>
-        <!-- <a href="../final" class="menu-bar-item menu-button">Final</a> -->
-        <!-- <a href="../caseStudy" class="menu-bar-item menu-button">Case Study</a> -->
-        <!-- <a href="../test/" class="menu-bar-item menu-button">WebGL: UI World Space</a> -->
         <div class="className menu-bar-item">
-            <h1>Independent Study</h1>
+            <h1>Unity 2D</h1>
+            <ul class="ul-hide">
+                <li class="menu-bar-item menu-button"><a href="../test01/">2D Pachinko</a></li>
+                <li class="menu-bar-item menu-button"><a href="../test/">World Space</a></li>
+                <li class="menu-bar-item menu-button"><a href="../studyPlan/">Project Plan</a></li>
+            </ul>
         </div>
-        <a href="../test01/" class="menu-bar-item menu-button">WebGL: 2D Pachinko</a>
     </div>
 </header>
+

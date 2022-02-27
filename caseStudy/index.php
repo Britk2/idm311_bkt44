@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebVR: Rubik's Cube | Case Study</title>
+    <title>UI-IM | Case Study</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="shortcut icon" href="../favicon.ico.png">
 </head>

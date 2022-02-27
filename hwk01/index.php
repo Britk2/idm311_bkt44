@@ -12,7 +12,7 @@
     <div class="container">
         <h1>Homework 01</h1>
         <div class="section">
-            <a href="https://lookinar.com/gallery/" target="_blank" class="org-link">Original Project</a>
+            <a href="https://lookinar.com/gallery/" target="_blank"><button class="buttonCenter">Original Project</button></a>
 
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlBUR3k9lSojyXxtxrjMRoS%2FVR-Gallery%3Fnode-id%3D1%253A4%26scaling%3Dcontain%26page-id%3D0%253A1" allowfullscreen></iframe>
 
@@ -21,11 +21,11 @@
             <div class="webgl-img-sec">
                 <div class="vrGallery1-L">
                     <img src="../img/VRGallery1-large.png" alt="VR Gallery Image Large 01">
-                    <img src="../img/VRGallery1a-large.png" alt="VR Gallery Image Large 01" class="vrGallery1a-L">
+                    <img src="../img/VRGallery1a-large.png" alt="VR Gallery Image Large 01" class="after">
                 </div>
                 <div class="vrGallery2-L">
                     <img src="../img/VRGallery2-large.png" alt="VR Gallery Image Large 02">
-                    <img src="../img/VRGallery2a-large.png" alt="VR Gallery Image Large 02" class="vrGallery2a-L">
+                    <img src="../img/VRGallery2a-large.png" alt="VR Gallery Image Large 02" class="after">
                 </div>
             </div>
 
@@ -34,11 +34,11 @@
             <div class="cardboard-img-sec">
                 <div class="vrGallery1-S">
                     <img src="../img/VRGallery1-small.png" alt="VR Gallery Image Large 02">
-                    <img src="../img/VRGallery1a-small.png" alt="VR Gallery Image Large 02" class="vrGallery1a-S">
+                    <img src="../img/VRGallery1a-small.png" alt="VR Gallery Image Large 02" class="after">
                 </div>
                 <div class="vrGallery2-S">
                     <img src="../img/VRGallery2-small.png" alt="VR Gallery Image Large 02">
-                    <img src="../img/VRGallery2a-small.png" alt="VR Gallery Image Large 02" class="vrGallery2a-S">
+                    <img src="../img/VRGallery2a-small.png" alt="VR Gallery Image Large 02" class="after">
                 </div>
             </div>
         </div>
