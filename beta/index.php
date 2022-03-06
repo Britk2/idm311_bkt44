@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI-IM | HW03</title>
+    <title>UI-IM | Beta</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="shortcut icon" href="../favicon.ico.png">
 </head>
 <body>
 <?php include('../include/header.php'); ?>
     <div class="container" id="container">
-        <h1>Homework 03</h1>
+        <h1>Beta</h1>
         <div class="section">
         <p>To reset the experience, hit the "R" key.</p>
-        <p>This file is about 36 MB</p>
+        <p>This file is about 48 MB</p>
         </div>
 
         <div id="unity-container" class="unity-desktop">
@@ -35,11 +35,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/hw03-v1.loader.js";
+      var loaderUrl = buildUrl + "/beta-v1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/hw03-v1.data",
-        frameworkUrl: buildUrl + "/hw03-v1.framework.js",
-        codeUrl: buildUrl + "/hw03-v1.wasm",
+        dataUrl: buildUrl + "/beta-v1.data",
+        frameworkUrl: buildUrl + "/beta-v1.framework.js",
+        codeUrl: buildUrl + "/beta-v1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BTuDesign",
         productName: "IDM311-Final-GasStation",
@@ -92,22 +92,36 @@
       document.body.appendChild(script);
     </script>
 
-    <h2>Interactions Planning To Add</h2>
-    <h3>Interactive Objects</h3>
+    <h2>Interactions Plans</h2>
+    <h3>Added</h3>
         <p>
             <ul>
-                <li>Vending Machine</li>
-                <li>Bus Stop Signs</li>
-                <li>ATM Machine</li>
+                <li>Vending Machine UI Function
+                  <ul>
+                    <li>Currency SFX w/ Initial Interaction</li>
+                    <li>SFX for item selected and drop (need to increase the volume)</li>
+                    <li>Change SFX when exit menu</li>
+                  </ul>
+                </li>
+                <li>Bus Stop UI Function
+                  <ul>
+                    <li>Choices to change time of day</li>
+                    <li>Lighting changes based on time of day selected</li>
+                    <li>Different music plays based on choice</li>
+                  </ul>
+                </li>
+                <li>Added Wall in Environment</li>
+                <li>Refine rotation/movement speed to be slower</li>
             </ul>
         </p>
 
-    <h3>System Controls</h3>
+    <h3>Still Need to Add</h3>
         <p>
             <ul>
-                <li><strong>(Overlay)</strong> When interacting with a vending machine, a pop up will show up. This will allow a user to select from a few options of "drinks" that is accompanied by a sound effect.</li>
-                <li><strong>(Text Overlay)</strong> The bus stop signs when interacted with will change the lighting within the environment. Some text will show up in front of the camera to tell the player this has happened.</li>
-                <li><strong>(World Space)</strong> When interacting with an ATM, a UI will show up in front of the ATM to increase and decrease a number.</li>
+                <li>Add ATM function</li>
+                <li>Lock Movement/camera when UI is open?</li>
+                <li>Customize Design of UI</li>
+                <li>Add Jump (optional)</li>
             </ul>
         </p>
 
