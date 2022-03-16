@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI-IM | HW03</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="shortcut icon" href="../favicon.ico.png">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
 <body>
 <?php include('../include/header.php'); ?>

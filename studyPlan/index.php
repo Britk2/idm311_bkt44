@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Independent Study | Project Plan</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="shortcut icon" href="../favicon.ico.png">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
 <body>
 <?php include('../include/header.php'); ?>
-    <div class="container">
+    <div class="container" id="top">
         <h1>Project Plan Journal: Unity 2D</h1>
         <h5>Independent Study</h5>
         <!-- <p>Images/GIF/Videos still need to be added.</p> -->
@@ -96,10 +96,12 @@ void Update()
                         <li>Each “asset” is in a tile to create a material for the particle system to go off of.</li>
                     </ul>
                     <figure>
-                        <img class="smallerIMG" src="../img/pointerParticle.png" alt="Initial Cursor Particle">
-                        <figcaption>Initial Cursor Particle</figcaption>
-                        <img class="smallerIMG" src="../img/playerParticle.png" alt="Initial Trail Particle">
-                        <figcaption>Initial Trail Particle</figcaption>
+                        <div class="flexIMG">
+                            <div class="flexItem"><img class="smallerIMG" src="../img/pointerParticle.png" alt="Initial Cursor Particle">
+                        <figcaption>Initial Cursor Particle</figcaption></div>
+                            <div class="flexItem"><img class="smallerIMG" src="../img/playerParticle.png" alt="Initial Trail Particle">
+                        <figcaption>Initial Trail Particle</figcaption></div>
+                        </div>
                     </figure>
                 </ul>
             <h2>Asset Creation</h2>
@@ -111,12 +113,14 @@ void Update()
                         <li>Finalize the player's feet particles</li>
                     </ul>
                     <figure>
-                        <img class="smallerIMG" src="../img/PFX_cursor.png" alt="First Pass Cursor">
-                        <figcaption>First Pass Cursor</figcaption>
-                        <img class="smallerIMG" src="../img/PFX_cursor_particle.png" alt="First Pass Cursor Particle">
-                        <figcaption>First Pass Cursor Particle</figcaption>
-                        <img class="smallerIMG" src="../img/PFX_player_trail.png" alt="First Pass Trail Particle">
-                        <figcaption>First Pass Trail Particle</figcaption>
+                        <div class="flexIMG">
+                            <div class="flexItem"><img class="smallerIMG" src="../img/PFX_cursor.png" alt="First Pass Cursor">
+                            <figcaption>First Pass Cursor</figcaption></div>
+                            <div class="flexItem"><img class="smallerIMG" src="../img/PFX_cursor_particle.png" alt="First Pass Cursor Particle">
+                            <figcaption>First Pass Cursor Particle</figcaption></div>
+                            <div class="flexItem"><img class="smallerIMG" src="../img/PFX_player_trail.png" alt="First Pass Trail Particle">
+                            <figcaption>First Pass Trail Particle</figcaption></div>
+                        </div>
                         <img src="../img/particles.gif" alt="Particle Example GIF">
                         <figcaption>Particle Example GIF</figcaption>
                     </figure>
@@ -186,16 +190,18 @@ void Update()
                         <li>Plans to have particle effect disappear upon using the control as if “absorbing” the knowledge from the spirits</li>
                     </ul>
                     <figure>
-                        <img class="smallerIMG" src="../img/UI_tutorial_loreText.png" alt="Tutorial Lore Text Icon">
-                        <figcaption>Lore Text Icon</figcaption>
-                        <img class="smallerIMG" src="../img/UI_tutorial_leftClick2.png" alt="Left Click Icon">
-                        <figcaption>Left Click Icon</figcaption>
-                        <img class="smallerIMG" src="../img/UI_tutorial_rightClick2.png" alt="Right Click Icon">
-                        <figcaption>Right Click Icon</figcaption>
-                        <img class="smallerIMG" src="../img/UI_tutorial_rock.png" alt="Tutorial Rock">
-                        <figcaption>Tutorial Rock</figcaption>
-                        <img class="smallerIMG" src="../img/UI_tutorial_ground.png" alt="Ground Around Rock">
-                        <figcaption>Ground Around Rock</figcaption>
+                        <div class="flexIMG">
+                            <div class="flexItem"><img class="smallerIMG" src="../img/UI_tutorial_loreText.png" alt="Tutorial Lore Text Icon">
+                            <figcaption>Lore Text Icon</figcaption></div>
+                            <div class="flexItem"><img class="smallerIMG" src="../img/UI_tutorial_leftClick2.png" alt="Left Click Icon">
+                            <figcaption>Left Click Icon</figcaption></div>
+                            <div class="flexItem"><img class="smallerIMG" src="../img/UI_tutorial_rightClick2.png" alt="Right Click Icon">
+                            <figcaption>Right Click Icon</figcaption></div>
+                            <div class="flexItem"><img class="smallerIMG" src="../img/UI_tutorial_rock.png" alt="Tutorial Rock">
+                            <figcaption>Tutorial Rock</figcaption></div>
+                            <div class="flexItem"><img class="smallerIMG" src="../img/UI_tutorial_ground.png" alt="Ground Around Rock">
+                            <figcaption>Ground Around Rock</figcaption></div>
+                        </div>
                         <img src="../img/tutorial-icon-examples.gif" alt="Tutorial Example GIF">
                         <figcaption>Tutorial Example</figcaption>
                     </figure>
@@ -226,6 +232,11 @@ void Update()
                         <figcaption>Area 2 In Game</figcaption>
                     </figure>
                 </ul>
+                <h2>Conclusion</h2>
+                <p>Overall, I have learned a lot with this more focused study with creating Unity 2D UI and assets.  Knowing general formats and the creation process for UI elements as well as particle effects have helped enhance and fine tune the player’s experience. If I were to have more time to work on creating more UI elements, I would look into how to make a basic mini map system as there was some player feedback on wanting one. I would also like to learn more level design to give a better flow in all the levels that are present as I am currently not fully satisfied with what we have. However, I am proud of the work I have done so far.</p>
+        </div>
+        <div class="back-to-top-wrapper">
+            <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">^</a>
         </div>
     </div>
 </body>

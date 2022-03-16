@@ -12,40 +12,74 @@
     <div class="container">
         <h1>Case Study</h1>
         <div class="contain">
-        <img src="cube.png" alt="rubiks cube 3D model">
+        <img src="" alt="Town Bus Stop Hero IMG">
         <h3>Overview</h3>
             <p>I am Britney Tu, a student studying UX and UI at Drexel University. This project was about experimenting applying 3D media on the web using THREE.js. I ended up going with a 3D model that a user can interact with. Overall I believe this project was useful with applying 3D media onto the web.</p>
         <h3>Context & Challenge</h3>
-            <p>I specifically wanted to work with a 3D model and animation as I have little to no experience with working with one; especially applying it to the web. The project exist to expand on my existing knowledge of web development and apply it to WebVR with THREE.js. Knowing the idea of what I wanted to create, I had to just figure out how the particular 3D model I was using can be applied to existing example code.</p>
+            <p>I took this class to learn more about unity and how to create games. I wanted to go more in depth with game design and general programing within games that Unity was the choice to go with.</p>
+            <p>This class was offered as an elective and it gave me the opportunity to further develop my skills as a designer within the field. The goals of the class was to give a basic understanding of UI designing and developing in Unity which aligned with my own goals to do the same. It was about a 10 week long course which by the end of it I would create a simple experience with three interactable objects within the world that would enhance the user experience.</p>
+            <p>Once this experience is completed, it will prove to me, my peers, and future employers that I have the skills to make interactable UI within Unity.</p>
+        <h3>Process and Insight</h3>
+                <p>As this project is to highlight the skills I have learned in the class, it is intended to be used as a portfolio piece. The project will be presented within a webpage using WebGL to allow easier ways to distribute the project as well as to allow users to interact with the world themselves on their own PC.</p>
+                <p>For the general design, I have chosen a town environment from Unity Asset Store to be able to focus on creating the interaction based on a predetermined space. From here I selected three objects to create user interactions from: ATM, Vending Machine, and Bus Stop. Based on these objects I came up with three potential interactions.</p>
+                <ul>
+                    <li>Menu on top of the vending machine.</li>
+                        <ul>
+                            <li>When interacting with a vending machine, a pop up will show up. This will allow a user to select from a few options of "drinks" that are accompanied by a sound effect.</li>
+                        </ul>
+                    <li>Text status update on sign.</li>
+                        <ul>
+                            <li>The bus stop signs when interacted with will change the lighting within the environment. Some text will show up on the sign to indicate there was a status update..</li>
+                        </ul>
+                    <li>Menu on top of the ATM.</li>
+                        <ul>
+                            <li>When interacting with an ATM, a UI will show up in front of the ATM to increase and decrease a number.</li>
+                        </ul>
+                </ul>
+                <p>From here I set out to customize the environment to fit the class requirements. I blocked off areas of the map to ensure the users can't stray too far away from the interactable objects. I also removed some built in objects with readable text so as to not distract the player from the core goal of the project making it easier to highlight what I want to within the environment.</p>
+            <h4>Prototype</h4>
+                <p>Once the environment was made ready I started to create the base interactions of the scene. I started with the vending machine as I thought it was the simplest as it was only to play SFX upon hitting buttons, it doesn't change the world directly or have a need to save any information. If I was able to create this basic interaction with the vending machine without any errors, it can show at the minimum that I was able to create an interactable object with an interactable menu.</p>
             <h4>Code/Dev</h4>
                     <!-- <img src="menu_img.png" alt="original drop down"> -->
-                    <p>First issue I had was getting the animation to work. After playing around with several different animation functions with three.js I was able to get my 3D model of a rubix cube to animate.
-                    <pre><code>
-                            var animation = mixer.clipAction(model.animations[0]);
-                            animation.setLoop( THREE.LoopOnce );
-                            animation.play().reset();</code></pre></p>
-                    <p>This piece of code allowed the animation to play and stop after once loop. The <strong class="code"><code>.reset();</code></strong> allows for future calls of the animation to be played on command 1 time as noted with <strong class="code"><code>.setLoop(THREE.LoopOnce);</code></strong></p>
-                    <p>Afterwards I had to figure-out how to attach these buttons to the functions to trigger the animation and rotation I wanted to include in the build</p>
-                    <ul>
-                        <li>Shuffle Button currently only plays animation ONCE, needs to be adjusted to do it unlimited clicks of the button.</li>
-                        <li>Properly update status for SHUFFLE; check for when the animation end after 1 LOOP</li>
-                    </ul>
-                    <p>The two points above I had the most trouble in since I wasn't able to figure out how long each animation was within the 3-D model. Eventually though I was able to figure out how to address this issue by using <strong class="code"><code>setTimeout();</code></strong> function. I then timed how long the animation is and had a function code to reset information as needed if the animation was fully played out. If the user clicked on the button before the animation finished, the information would be reset and any other associated data</p>
+                <p>One aside from the interactions I wanted to add as per requirement of the class, I included a built-in way to reset the game experience without having the user refresh their browser. I went with using the “R” key as it represents “restart”, “reset”, etc.</p>
+                <ul><pre>
+void Update()
+{
+if (Input.GetKeyDown(KeyCode.R))
+{
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
+}
+}
+                </pre></ul>
         <h3>Solution</h3>
-            <p id="final">This build allows users to interact with the 3D object in multiple ways. They can toggle the auto rotation as well as the animation of the cube doing a simple shuffling of the cube. Below the interface, users can change the background color of the VR space to any color they wish to with the color picker included</p>
-            
-            <video
-                controls
-                preload
-                class="demo">
-                    <source src="https://media.btudesign.com/video/rubiks_demo.mp4" type="video/mp4" />
-            </video>
-            <div class="links">
-                <a href="https://idm331.btudesign.com/final/" target="_blank">Rubiks WebVR Build</a>
-                <br>
-            </div>
+            <p id="final">The following link is to the finished product and a description of the various interaction within the environment.</p>
+            <ul>
+                <li>Player Movement</li>
+                    <ul>
+                        <li>WASD or arrow keys to move</li>
+                        <li>Right-click and drag to rotate camera</li>
+                    </ul>
+                <li>Bus Stop</li>
+                    <ul>
+                        <li>Select one of three choices to change time of day.</li>
+                        <li>Lighting changes based on time of day selected</li>
+                        <li>Different music plays based on choice</li>
+                    </ul>
+                <li>Vending Machine</li>
+                    <ul>
+                        <li>Interacting with the vending machine plays various SFX</li>
+                        <li>Cash inserting, items dropping, and coin change.</li>
+                    </ul>
+                <li>ATM</li>
+                    <ul>
+                        <li>Interact with the ATM to adjust the account balance.</li>
+                        <li>SFX plays when pressing different buttons on the UI</li>
+                        <li>Balance value is saved throughout the experience until the page is refreshed or "R" is used.</li>
+                    </ul>
+                <a href="../final" target="_blank"><button>Unity UI Final Project</button></a>
+            </ul>
         <h3>Results</h3>
-            <p>This project was a success as I was able to have the 3D model appear and be interactable. Features include orbit rotation, toggle auto rotation, play animation, and change the background of the model with the color picker. I learned a lot with this project as I got to work with javaScript and how that relates to THREE.js</p>
+            <p>Overall I am happy with the work I did for the class. I learned a general flow of how to set up a UI within Unity within a 3D environment. In the future, if I had more time to work on this environment, I would add more effect, volume control, and more that would help with the user experience when being within the world.</p>
     </div>
     </div>
 </body>

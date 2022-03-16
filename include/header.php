@@ -14,8 +14,8 @@
                 </ul>
                 <li class="menu-bar-item menu-button"><a href="../hwk03">HW 03</a></li>
                 <li class="menu-bar-item menu-button"><a href="../beta">Beta</a></li>
-                <!-- <a href="../final" class="menu-bar-item menu-button">Final</a> -->
-                <!-- <a href="../caseStudy" class="menu-bar-item menu-button">Case Study</a> -->
+                <li class="menu-bar-item menu-button"><a href="../final" class="menu-bar-item menu-button">Final</a></li>
+                <li class="menu-bar-item menu-button"><a href="../caseStudy" class="menu-bar-item menu-button">Case Study</a></li>
             </ui>
         </div>
         <div class="className menu-bar-item">

@@ -7,6 +7,7 @@
     --textC:#303b5b;
     --textCs:#d8f2f3;
     --purple: #b7a1f3;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -31,6 +32,34 @@ body{
 h1,h2,h3,h4,h5,h6{
     font-family: "Heebo", sans-serif;
     text-align: center;
+}
+
+.back-to-top-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--darkBackground);
+    /* emoji don't behave like regular fonts
+       so this helped position it correctly */
+    padding: .5rem .25rem 0 0.25rem;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+  }
+.back-to-top-link:hover{
+    background-color: #d8f2f3;
+    color: var(--textC);
+}
+.back-to-top-wrapper {
+    position: sticky;
+    bottom: 5%;
+
 }
 
 
@@ -113,7 +142,7 @@ button:hover{
 }
 
 img, video{
-    width: 75%;
+    width: 100%;
     max-width: 50rem;
     display: inline-block;
     text-align: center;
@@ -124,7 +153,16 @@ img, video{
 }
 
 .smallerIMG{
-    width: 50%;
+    width: 10rem;
+}
+
+.flexItem{
+    flex: 1 0 25%;
+    margin: 5px;
+}
+.flexIMG{
+    display: flex;
+    flex-flow: wrap;
 }
 
 

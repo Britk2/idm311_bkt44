@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI-IM | Beta</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="shortcut icon" href="../favicon.ico.png">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
 <body>
 <?php include('../include/header.php'); ?>
@@ -119,7 +119,6 @@
         <p>
             <ul>
                 <li>Add ATM function</li>
-                <li>Lock Movement/camera when UI is open?</li>
                 <li>Customize Design of UI</li>
                 <li>Add Jump (optional)</li>
             </ul>
