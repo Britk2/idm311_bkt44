@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI-IM | Case Study</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="shortcut icon" href="../favicon.ico.png">
+    <link rel="shortcut icon" href="../favicon.ico">
 </head>
 <body>
 <?php include('../include/header.php'); ?>
     <div class="container">
-        <h1>Case Study</h1>
+        <h1>User Interface In Immersive Media</h1>
+        <h2>A Case Study by Britney Tu</h2>
         <div class="contain">
-        <img src="" alt="Town Bus Stop Hero IMG">
+        <img src="../img/final-feature.png" alt="Town Bus Stop Hero IMG">
         <h3>Overview</h3>
-            <p>I am Britney Tu, a student studying UX and UI at Drexel University. This project was about experimenting applying 3D media on the web using THREE.js. I ended up going with a 3D model that a user can interact with. Overall I believe this project was useful with applying 3D media onto the web.</p>
+            <p>User Interface in Immersive Media (UI-IM) is an elective class offered during my time studying at Drexel University. As someone who wanted to learn more about game design and development, I took this class to help expand my knowledge of UI within this space. The goal at the end of the 10 week long class is to learn the basics of Unity, how to move in a 3D space as well as creating meaningful interactions within an environment.</p>
         <h3>Context & Challenge</h3>
             <p>I took this class to learn more about unity and how to create games. I wanted to go more in depth with game design and general programing within games that Unity was the choice to go with.</p>
             <p>This class was offered as an elective and it gave me the opportunity to further develop my skills as a designer within the field. The goals of the class was to give a basic understanding of UI designing and developing in Unity which aligned with my own goals to do the same. It was about a 10 week long course which by the end of it I would create a simple experience with three interactable objects within the world that would enhance the user experience.</p>
@@ -45,10 +46,11 @@
                 <ul><pre>
 void Update()
 {
-if (Input.GetKeyDown(KeyCode.R))
-{
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
-}
+    if (Input.GetKeyDown(KeyCode.R))
+    {
+        // re-loads current scene if "R" key is pressed
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
                 </pre></ul>
         <h3>Solution</h3>
@@ -78,6 +80,9 @@ if (Input.GetKeyDown(KeyCode.R))
                     </ul>
                 <a href="../final" target="_blank"><button>Unity UI Final Project</button></a>
             </ul>
+            <img src="../img/final-busstop.png" alt="bus stop">
+            <img src="../img/final-vendingmachine.png" alt="vending machine">
+            <img src="../img/final-atm.png" alt="atm">
         <h3>Results</h3>
             <p>Overall I am happy with the work I did for the class. I learned a general flow of how to set up a UI within Unity within a 3D environment. In the future, if I had more time to work on this environment, I would add more effect, volume control, and more that would help with the user experience when being within the world.</p>
     </div>
